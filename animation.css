@@ -1,0 +1,58 @@
+.animate {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.clip-circle {
+    animation: 4s clip-circle linear forwards;
+}
+
+@keyframes clip-circle {
+    0%{
+        clip-path: circle(0% at 50% 50%);
+    } 
+    25%{
+        clip-path: circle(70.7% at 50% 50%);
+    }
+    50%{
+        clip-path: circle(70.7% at 50% 50%);
+    }
+    100%{
+        clip-path: circle(0% at 50% 50%);
+    }
+}
+
+.slide-l {
+    z-index: 1;
+    left: 0px;
+    animation: 2s slide-l linear forwards;
+    transform: left 2s linear;
+}
+
+.slide-r {
+    z-index: 1;
+    right: 0px;
+    animation: 2s slide-r linear forwards;
+    transform: left 2s linear;
+}
+
+@keyframes slide-l {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -102.5%;
+    }
+}
+
+@keyframes slide-r {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -102.5%;
+    }
+}
