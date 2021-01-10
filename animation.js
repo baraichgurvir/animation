@@ -4,6 +4,7 @@ class Animator {
         this.sec = 4;
         this.from = 1;
         this.y = null;
+        this.x = "100vw";
         this.type = String;
         this.side = "LEFT";
     }
@@ -139,7 +140,7 @@ class Animator {
     }
     
     over(container) {
-        container.style.width = "100vw";
+        container.style.width = this.x;
         container.style.height = this.y;
         container.style.overflow = "hidden";
     }
